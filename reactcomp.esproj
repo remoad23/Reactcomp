@@ -14,5 +14,6 @@
   <ItemGroup>
     <Folder Include="src\Icons\" />
     <Folder Include="src\Components\" />
+    <Folder Include="src\Pages\" />
   </ItemGroup>
 </Project>

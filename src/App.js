@@ -1,40 +1,53 @@
-import logo from './logo.svg';
 import './App.css';
 
+import React, { Component } from 'react';
+
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Link
+} from 'react-router-dom';
+
 function App() {
-  return (
-    <div className="App">
-          <div className="mainPageBody">
+    return (
+        <Router>
+            <div className="App">
 
-              <div className="mainPageContent">
-                  <h1>Pager</h1>
-              </div>
-              <div className="mainPageContent">
-                  <h1>Calendar</h1>
-              </div>
-              <div className="mainPageContent">
-                  <h1>FormMaker</h1>
-              </div>
-              <div className="mainPageContent">
-                  <h1>Chart</h1>
-              </div>
+                <div className="mainPageBody">
 
-              <div className="mainPageContent">
-                  <h1>Table</h1>
-              </div>
-              <div className="mainPageContent">
-                  <h1>ToolTip</h1>
-              </div>
-              <div className="mainPageContent">
-                  <h1>Modalwindow</h1>
-              </div>
-              <div className="mainPageContent">
-                  <h1>FileUploader</h1>
-              </div>
+                    <div className="mainPageContent">
+                        <Link to="Pages/Pager">Pager</Link>
+                    </div>
+                    <div className="mainPageContent">
+                        <Link to="Pages/Calendar">Calendar</Link>
+                    </div>
+                    <div className="mainPageContent">
+                        <Link to="Pages/FormMaker">FormMaker</Link>
+                    </div>
+                    <div className="mainPageContent">
+                        <Link to="Pages/Chart">Chart</Link>
+                    </div>
 
-          </div>
-    </div>
-  );
+                    <div className="mainPageContent">
+                        <Link to="Pages/Table">Table</Link>
+                    </div>
+                    <div className="mainPageContent">
+                        <Link to="Pages/ToolTip">ToolTip</Link>
+                    </div>
+                    <div className="mainPageContent">
+                        <Link to="Pages/ModalWindow">ModalWindow</Link>
+                    </div>
+                    <div className="mainPageContent">
+                        <Link to="Pages/FileUploader">FileUploader</Link>
+                    </div>
+
+                </div>
+
+
+            </div >
+            </Router>
+    );
 }
 
-export default App;
+                export default App;
