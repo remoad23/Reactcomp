@@ -1,53 +1,42 @@
 import './App.css';
-
 import React, { Component } from 'react';
 
 import {
     BrowserRouter as Router,
     Routes,
-    Route,
-    Link
+    Route
 } from 'react-router-dom';
+
+import Layout from "./Pages/Layout"
+import Home from "./Pages/Home"
+import Pager from "./Pages/Pager"
+import Table from "./Pages/Table"
+import ToolTip from "./Pages/ToolTip"
+import FormMaker from "./Pages/FormMaker"
+import FileUploader from "./Pages/FileUploader"
+import Chart from "./Pages/Chart"
+import Calendar from "./Pages/Calendar"
+import ModalWindow from "./Pages/ModalWindow"
 
 function App() {
     return (
+
         <Router>
-            <div className="App">
-
-                <div className="mainPageBody">
-
-                    <div className="mainPageContent">
-                        <Link to="Pages/Pager">Pager</Link>
-                    </div>
-                    <div className="mainPageContent">
-                        <Link to="Pages/Calendar">Calendar</Link>
-                    </div>
-                    <div className="mainPageContent">
-                        <Link to="Pages/FormMaker">FormMaker</Link>
-                    </div>
-                    <div className="mainPageContent">
-                        <Link to="Pages/Chart">Chart</Link>
-                    </div>
-
-                    <div className="mainPageContent">
-                        <Link to="Pages/Table">Table</Link>
-                    </div>
-                    <div className="mainPageContent">
-                        <Link to="Pages/ToolTip">ToolTip</Link>
-                    </div>
-                    <div className="mainPageContent">
-                        <Link to="Pages/ModalWindow">ModalWindow</Link>
-                    </div>
-                    <div className="mainPageContent">
-                        <Link to="Pages/FileUploader">FileUploader</Link>
-                    </div>
-
-                </div>
-
-
-            </div >
-            </Router>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path="pager" element={<Pager />} />
+                    <Route path="table" element={<Table />} />
+                    <Route path="tooltip" element={<ToolTip />} />
+                    <Route path="formmaker" element={<FormMaker />} />
+                    <Route path="fileuploader" element={<FileUploader />} />
+                    <Route path="chart" element={<Chart />} />
+                    <Route path="calendar" element={<Calendar />} />
+                    <Route path="modalwindow" element={<ModalWindow />} />
+                </Route>
+            </Routes>
+        </Router>
     );
 }
 
-                export default App;
+export default App;

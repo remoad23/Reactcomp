@@ -1,2 +1,4 @@
 C:\Users\Patrick\source\repos\reactcomp\reactcomp\obj\Debug\reactcomp.esproj.SuggestedBindingRedirects.cache
 C:\Users\Patrick\source\repos\reactcomp\reactcomp\obj\Debug\reactcomp.esproj.CoreCompileInputs.cache
+C:\Users\paddy\Source\Repos\remoad23\Reactcomp\reactcomp\obj\Debug\reactcomp.esproj.SuggestedBindingRedirects.cache
+C:\Users\paddy\Source\Repos\remoad23\Reactcomp\reactcomp\obj\Debug\reactcomp.esproj.CoreCompileInputs.cache

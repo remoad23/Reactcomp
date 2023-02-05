@@ -5,14 +5,9 @@
 /* Colors: https://coolors.co/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8 */
 
 .mainPageBody {
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 40px;
-    align-items: center;
-    justify-content: center;
 }
 
 .mainPageContent {
@@ -24,7 +19,6 @@
     width: clamp(20vw,20vw,20vw);
     background-color: #0096C7;
     transition: background-color 0.3s, font-size 0.3s;
-    color: #023E8A;
     box-shadow: rgba(202, 240, 248, 0.24) 0px 3px 8px;
 }
 
@@ -33,3 +27,20 @@
         font-size: 1.4em;
         cursor: pointer;
     }
+
+    .mainPageContent > a {
+        color: #023E8A;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+
+.mainPageWrapper {
+    height: 80%;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
