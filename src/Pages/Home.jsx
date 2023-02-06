@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
         <div className="mainPageWrapper">
-            <div onClick={(e) => Redirect(e.target)}  className="mainPageContent" on>
+            <div onClick={(e) => Redirect(e.target)}  className="mainPageContent">
                 <Link to="pager">Pager</Link>
             </div>
             <div onClick={(e) => Redirect(e.target)}  className="mainPageContent">
