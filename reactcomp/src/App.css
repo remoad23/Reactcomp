@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+/* Colors: https://coolors.co/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8 */
+
+.mainPageBody {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.mainPageContent {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: clamp(30vh,30vh,30vh);
+    width: clamp(20vw,20vw,20vw);
+    background-color: #0096C7;
+    transition: background-color 0.3s, font-size 0.3s;
+    box-shadow: rgba(202, 240, 248, 0.24) 0px 3px 8px;
+}
+
+    .mainPageContent:hover {
+        background-color: #90E0EF;
+        font-size: 1.4em;
+        cursor: pointer;
+    }
+
+    .mainPageContent > a {
+        color: #023E8A;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+
+.mainPageWrapper {
+    height: 80%;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*--------------------------------------- PAGER --------------------------------------------------------- */
+
+.paginationWrapper 
+{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 20px;
+}
+
+.paginationNumberBlock {
+    background-color: #0096C7;
+    transition: background-color 0.3s;
+    width: 5%;
+    height: 30%;
+    border-radius: 5px;
+    color: #023E8A;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+    .paginationNumberBlock:hover {
+        background-color: aliceblue;
+        cursor: pointer;
+        background-color: #90E0EF;
+    }
+
+.currentPaginationElement
+{
+    height: 80%;
+    width: 100%;
+}
+
+.pager
+{
+    height: 50vh;
+    width: 40vw;
+    background-color: white;
+}
+
+
+/*--------------------------------------- PAGER END ------------------------------------------------------ */
