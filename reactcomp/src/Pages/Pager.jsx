@@ -2,16 +2,16 @@ import React from 'react';
 import PagerC from '../Components/Pager'
 
 let elements = [
-    <h1>1</h1>,
-    <h2>2</h2>,
-    <h3>3</h3>,
-    <h1>4</h1>,
-    <h1>5</h1>,
-    <h1>6</h1>,
-    <h1>7</h1>,
-    <h1>8</h1>,
-    <h1>9</h1>,
-    <h1>10</h1>
+    <h1>First Page</h1>,
+    <h2>Second Page</h2>,
+    <h3>Third Page</h3>,
+    <h1>Fourth Page</h1>,
+    <h1>Fifth Page</h1>,
+    <h1>Sixth Page</h1>,
+    <h1>Seventh Page</h1>,
+    <h1>Eight Page</h1>,
+    <h1>9th Page</h1>,
+    <h1>10th Page</h1>
 ];
 
 function Pager() {

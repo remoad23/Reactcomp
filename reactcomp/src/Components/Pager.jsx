@@ -48,7 +48,7 @@ function Pager({ elements = null }) {
     // returns last lowest index in pages that is not null
     function LeftLimitPagination(pagination) {
         for (let x = pagination; x > pagination - 5; x--) {
-            if (!pages[x]) {
+            if (!pages[x] || x < 0) {
                 return x + 1;
             }
         }

@@ -92,3 +92,75 @@
 
 
 /*--------------------------------------- PAGER END ------------------------------------------------------ */
+
+/*--------------------------------------- CHART START ------------------------------------------------------ */
+
+.ChartPageWrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.chartWrapper
+{
+    display: flex;
+    flex-direction: row;
+    height: 40vh;
+    width: 50vw;
+    background-color: white;
+}
+
+.chartYAxis
+{
+    height: 100%;
+    width: 10%;
+    border-right: 1px solid black;
+}
+
+.chartXAxis
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+}
+
+.chartXAxisGraph {
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.chartXAxisLine {
+    height: 10%;
+    width: 100%;
+    border-top: 1px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.XAxisLine
+{
+    background-color: blue;
+    align-self: flex-end;
+}
+
+.chartYAxisNumbers
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 95%;
+    margin-right: 10px;
+}
+
+/*--------------------------------------- CHART END ------------------------------------------------------ */
