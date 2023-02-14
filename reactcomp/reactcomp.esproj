@@ -12,13 +12,8 @@
     <BuildOutputFolder>$(MSBuildProjectDirectory)\build</BuildOutputFolder>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="src\Components\" />
+    <Folder Include="src\Components\FormMaker\" />
+    <Folder Include="src\Icons\" />
     <Folder Include="src\Pages\" />
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptConfiguration Remove="src\Icons\**" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Remove="src\Icons\**" />
   </ItemGroup>
 </Project>
