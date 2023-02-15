@@ -7,6 +7,7 @@ Components done by me (remoad23)
 - Formmaker
 - Calendar
 - Pager
+- Repository (HTTP Requests)
 
 Components done by jusmccar
 - FileUploader

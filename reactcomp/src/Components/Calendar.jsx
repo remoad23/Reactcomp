@@ -1,8 +1,9 @@
 import React from 'react';
+import CalendarC from '../Components/Calendar'
 
 function Calendar() {
   return (
-    <p>Hello world!</p>
+    <CalendarC></CalendarC>
   );
 }
 

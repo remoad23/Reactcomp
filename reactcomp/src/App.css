@@ -215,3 +215,45 @@
     margin-left: 10%;
 }
 /*--------------------------------------- FormMaker END ------------------------------------------------------ */
+
+/*--------------------------------------- Calendar START ------------------------------------------------------ */
+
+.calendarWrapper 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.calendarBody 
+{
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    height: 70vh;
+    width: 70vw;
+}
+
+.calendarHeader 
+{
+    width: 100%;
+    height: 10%;
+}
+
+.calendarGrid 
+{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .calendarGrid > * 
+    {
+        flex: 1 1 14%;
+        background-color: grey;
+    }
+
+/*--------------------------------------- Calendar  END ------------------------------------------------------ */
