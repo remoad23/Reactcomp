@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\reactcomp",
+    "\\reactcomp\\src",
+    "\\reactcomp\\src\\Pages"
   ],
   "SelectedNode": "\\reactcomp.sln",
   "PreviewInSolutionExplorer": false

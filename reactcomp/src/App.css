@@ -240,6 +240,10 @@
 {
     width: 100%;
     height: 10%;
+    font-size: clamp(1em,2em,3em);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .calendarGrid 
@@ -250,10 +254,52 @@
     flex-wrap: wrap;
 }
 
-    .calendarGrid > * 
-    {
+    .calendarGrid > * {
         flex: 1 1 14%;
         background-color: grey;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        font-size: clamp(1em,2.5em,4em);
+        border: 1px solid black;
+        transition: background-color 0.3s;
     }
 
+    .calendarGrid > *:hover
+    {
+        cursor:pointer;
+        background-color: blue;
+    }
+
+.goBackBtnCalendar, .goForwardBtnCalendar {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 2em;
+    width: 2em;
+    border-radius: 100%;
+    background-position: center;
+    background-size: 75%;
+}
+
+.goBackBtnCalendar {
+    background-image: url("Icons/arrow_back.svg");
+}
+
+.goForwardBtnCalendar {
+    background-image: url("Icons/arrow_forward.svg");
+}
+
+.goForwardBtnCalendar:hover
+{
+    cursor: pointer;
+}
+
+    .goBackBtnCalendar:hover {
+        cursor: pointer;
+    }
+
+.currentDate
+{
+    width: 20%;
+}
 /*--------------------------------------- Calendar  END ------------------------------------------------------ */
