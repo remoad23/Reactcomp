@@ -13,7 +13,7 @@ function Chart(data) {
 
         let lineCss = { height: heightPercentage, width: '40px',backgroundColor: line.color };
 
-        elements.push(<div className="XAxisLine" style={lineCss}></div>);
+        elements.push(<div key={line.id} className="XAxisLine" style={lineCss}></div>);
     }
 
     return (
